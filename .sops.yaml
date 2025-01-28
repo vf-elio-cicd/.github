@@ -1,0 +1,7 @@
+---
+# creation rules are evaluated sequentially, the first match wins
+creation_rules:
+  # Elio's Secrets: Just this PGP Key down below will be able to encrypt and decrypt the matching file
+  - path_regex: '(helm-charts/environments/elio|secrets|sops)/(.*).(json|yml|yaml)$'
+    pgp: >-
+      A2D6FB59B620A82A62D6E4F20C235D9552CE092B

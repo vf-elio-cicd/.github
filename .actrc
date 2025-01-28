@@ -1,0 +1,12 @@
+-P ubuntu-latest=viafoura-ubuntu-nektos-act:latest
+-P ubuntu-24.04=viafoura-ubuntu-nektos-act:latest
+--detect-event
+--reuse=false
+--rm
+--use-gitignore
+--env-file=./.act/.env
+--eventpath=./.act/event.json
+--pull=false
+--secret-file=./.act/.secrets
+--var-file=./.act/.vars
+--container-options=--privileged
